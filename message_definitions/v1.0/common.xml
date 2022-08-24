@@ -6787,11 +6787,32 @@
     <message id="9100" name="KRISO_STATUS">
       <description>KRISO status.</description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
-      <field type="float" name="roll" units="rad/s">Desired roll rate</field>
-      <field type="float" name="pitch" units="rad/s">Desired pitch rate</field>
-      <field type="float" name="yaw" units="rad/s">Desired yaw rate</field>
-      <field type="int32_t" name="lat" units="degE7">Latitude, expressed</field>
-      <field type="int32_t" name="lon" units="degE7">Longitude, expressed</field>
+      <field type="uint8_t" name="nav_mode">Navigation mode</field>
+      <field type="float" name="nav_roll" units="degree">degree roll</field>
+      <field type="float" name="nav_pitch" units="degree">degree roll</field>
+      <field type="float" name="nav_yaw" units="degree">degree roll</field>
+      <field type="float" name="nav_cog" units="degree">degree COG</field>
+      <field type="float" name="nav_sog" units="knots">knots degree SOG</field>
+      <field type="float" name="nav_uspd" units="knots">longitudinal speed</field>
+      <field type="float" name="nav_vspd" units="knots">traversal speed</field>
+      <field type="float" name="nav_wspd" units="knots">vertical speed</field>
+      <field type="double" name="nav_longitude" units="degree">degree </field>
+      <field type="double" name="nav_latitude" units="degree">degree </field>
+      <field type="float" name="nav_heave" units="m">Heave</field>
+      <field type="float" name="nav_gpstime" units="time">hhmmss time</field>
+      <field type="float" name="wea_airtem" units="degree">air temperature</field>
+      <field type="float" name="wea_wattem" units="degree">water temperature</field>
+      <field type="float" name="wea_press" units="bar">pressure</field>
+      <field type="float" name="wea_relhum" units="%">relative humidity</field>
+      <field type="float" name="wea_dewpt" units="degree">dew </field>
+
+      <field type="float" name="wea_windirt" units="degree">wind direction</field>
+      <field type="float" name="wea_winspdt" units="degree">wind velocity</field>
+      <field type="float" name="wea_windirr" units="degree">wind direction relative</field>
+      <field type="float" name="wea_watspdr" units="knots">water velocity</field>
+      <field type="float" name="wea_watdir" units="degree">water direction</field>
+      <field type="float" name="wea_watspd" units="knots">water velocity</field>      
+      <field type="float" name="wea_visibiran" units="m">visual sight</field>
     </message>
     <message id="12900" name="OPEN_DRONE_ID_BASIC_ID">
       <wip/>
