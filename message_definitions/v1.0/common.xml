@@ -6787,6 +6787,12 @@
     <message id="9100" name="KRISO_STATUS">
       <description>KRISO status.</description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="float" name="t1_rpm" units="rpm">t1 rpm</field>
+      <field type="float" name="t2_rpm" units="rpm">t2 rpm</field>
+      <field type="float" name="t3_rpm" units="rpm">t3 rpm</field>
+      <field type="float" name="t3_angle" units="rpm">t3 angle</field>
+      <field type="float" name="t4_rpm" units="rpm">t4 rpm</field>
+      <field type="float" name="t4_angle" units="rpm">t4 angle</field>
       <field type="uint8_t" name="nav_mode">Navigation mode</field>
       <field type="float" name="nav_roll" units="degree">degree roll</field>
       <field type="float" name="nav_pitch" units="degree">degree roll</field>
