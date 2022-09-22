@@ -7047,21 +7047,15 @@
       <field type="float" name="nav_sog" units="knots">knots degree SOG</field>
       <field type="float" name="nav_uspd" units="knots">longitudinal speed</field>
       <field type="float" name="nav_vspd" units="knots">traversal speed</field>
-      <field type="float" name="nav_wspd" units="knots">vertical speed</field>
       <field type="double" name="nav_longitude" units="degree">degree </field>
       <field type="double" name="nav_latitude" units="degree">degree </field>
-      <field type="float" name="nav_heave" units="m">Heave</field>
       <field type="float" name="nav_gpstime" units="time">hhmmss time</field>
       <field type="float" name="wea_airtem" units="degree">air temperature</field>
       <field type="float" name="wea_wattem" units="degree">water temperature</field>
       <field type="float" name="wea_press" units="bar">pressure</field>
       <field type="float" name="wea_relhum" units="%">relative humidity</field>
-      <field type="float" name="wea_dewpt" units="degree">dew </field>
-
       <field type="float" name="wea_windirt" units="degree">wind direction</field>
       <field type="float" name="wea_winspdt" units="degree">wind velocity</field>
-      <field type="float" name="wea_windirr" units="degree">wind direction relative</field>
-      <field type="float" name="wea_watspdr" units="knots">water velocity</field>
       <field type="float" name="wea_watdir" units="degree">water direction</field>
       <field type="float" name="wea_watspd" units="knots">water velocity</field>      
       <field type="float" name="wea_visibiran" units="m">visual sight</field>
