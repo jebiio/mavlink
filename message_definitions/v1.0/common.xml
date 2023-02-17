@@ -7331,8 +7331,8 @@
       <field type="float" name="t4_angle" units="rpm">t4 angle</field>
       <field type="uint8_t" name="nav_mode">Navigation mode</field>
       <field type="float" name="nav_roll" units="degree">degree roll</field>
-      <field type="float" name="nav_pitch" units="degree">degree roll</field>
-      <field type="float" name="nav_yaw" units="degree">degree roll</field>
+      <field type="float" name="nav_pitch" units="degree">degree pitch</field>
+      <field type="float" name="nav_yaw" units="degree">degree yaw</field>
       <field type="float" name="nav_cog" units="degree">degree COG</field>
       <field type="float" name="nav_sog" units="knots">knots degree SOG</field>
       <field type="float" name="nav_uspd" units="knots">longitudinal speed</field>
