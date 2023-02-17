@@ -7060,6 +7060,15 @@
       <field type="float" name="wea_watspd" units="knots">water velocity</field>      
       <field type="float" name="wea_visibiran" units="m">visual sight</field>
     </message>
+    <message id="9101" name="KRISO_VOL_STATUS">
+      <description>KRISO volt status.</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="float" name="ch1_volt" units="rpm">ch1 volt</field>
+      <field type="float" name="ch2_volt" units="rpm">ch2 volt</field>
+      <field type="float" name="ch3_volt" units="rpm">ch3 volt</field>
+      <field type="float" name="ch4_volt" units="rpm">ch4 volt</field>
+      <field type="float" name="invertor_volt" units="rpm">invertor volt</field>
+    </message>
     <message id="12900" name="OPEN_DRONE_ID_BASIC_ID">
       <wip/>
       <!-- This message is work-in-progress and it can therefore change, and should NOT be used in stable production environments -->
