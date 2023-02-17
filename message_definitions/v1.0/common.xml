@@ -7320,6 +7320,45 @@
       <field type="int16_t" name="temperature" units="degC" invalid="INT16_MAX">Temperature of the motor. INT16_MAX if unknown</field>
       <field type="uint32_t" name="status" display="bitmask" enum="MAV_WINCH_STATUS_FLAG">Status flags</field>
     </message>
+    <message id="9100" name="KRISO_STATUS">
+      <description>KRISO status.</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="float" name="t1_rpm" units="rpm">t1 rpm</field>
+      <field type="float" name="t2_rpm" units="rpm">t2 rpm</field>
+      <field type="float" name="t3_rpm" units="rpm">t3 rpm</field>
+      <field type="float" name="t3_angle" units="rpm">t3 angle</field>
+      <field type="float" name="t4_rpm" units="rpm">t4 rpm</field>
+      <field type="float" name="t4_angle" units="rpm">t4 angle</field>
+      <field type="uint8_t" name="nav_mode">Navigation mode</field>
+      <field type="float" name="nav_roll" units="degree">degree roll</field>
+      <field type="float" name="nav_pitch" units="degree">degree roll</field>
+      <field type="float" name="nav_yaw" units="degree">degree roll</field>
+      <field type="float" name="nav_cog" units="degree">degree COG</field>
+      <field type="float" name="nav_sog" units="knots">knots degree SOG</field>
+      <field type="float" name="nav_uspd" units="knots">longitudinal speed</field>
+      <field type="float" name="nav_vspd" units="knots">traversal speed</field>
+      <field type="double" name="nav_longitude" units="degree">degree </field>
+      <field type="double" name="nav_latitude" units="degree">degree </field>
+      <field type="float" name="nav_gpstime" units="time">hhmmss time</field>
+      <field type="float" name="wea_airtem" units="degree">air temperature</field>
+      <field type="float" name="wea_wattem" units="degree">water temperature</field>
+      <field type="float" name="wea_press" units="bar">pressure</field>
+      <field type="float" name="wea_relhum" units="%">relative humidity</field>
+      <field type="float" name="wea_windirt" units="degree">wind direction</field>
+      <field type="float" name="wea_winspdt" units="degree">wind velocity</field>
+      <field type="float" name="wea_watdir" units="degree">water direction</field>
+      <field type="float" name="wea_watspd" units="knots">water velocity</field>      
+      <field type="float" name="wea_visibiran" units="m">visual sight</field>
+    </message>
+    <message id="9101" name="KRISO_VOL_STATUS">
+      <description>KRISO status.</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="float" name="ch1_volt" units="rpm">ch1 volt</field>
+      <field type="float" name="ch2_volt" units="rpm">ch2 volt</field>
+      <field type="float" name="ch3_volt" units="rpm">ch3 volt</field>
+      <field type="float" name="ch4_volt" units="rpm">ch4 volt</field>
+      <field type="float" name="invertor_volt" units="rpm">invertor volt</field>
+    </message>
     <message id="12900" name="OPEN_DRONE_ID_BASIC_ID">
       <wip/>
       <!-- This message is work-in-progress and it can therefore change, and should NOT be used in stable production environments -->
