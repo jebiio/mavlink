@@ -7073,7 +7073,7 @@
     <message id="9102" name="KRISO_ROS_LOG_COMMAND">
       <description>KRISO ROS LOG </description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
-      <field type="uint8" name="ros_log_command">ros log command</field>
+      <field type="uint8_t" name="ros_log_command">ros log command</field>
     </message>
 
     <message id="9103" name="KRISO_CONTROL_COMMAND">
