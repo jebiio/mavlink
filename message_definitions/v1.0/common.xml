@@ -7084,6 +7084,12 @@
       <field type="uint32_t" name="ca_method" units="rpm">collision avoidance method</field>
     </message>
 
+    <message id="9104" name="KRISO_EMERGENCY_COMMAND">
+      <description>KRISO control command</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="uint8_t" name="emergency_mode">emergency command</field>
+    </message>
+
     <message id="12900" name="OPEN_DRONE_ID_BASIC_ID">
       <wip/>
       <!-- This message is work-in-progress and it can therefore change, and should NOT be used in stable production environments -->

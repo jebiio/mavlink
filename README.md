@@ -1,4 +1,6 @@
 [![Build Status](https://github.com/mavlink/mavlink/workflows/Test%20and%20deploy/badge.svg)](https://github.com/mavlink/mavlink/actions?query=branch%3Amaster)
+## kriso 메시지 생성하기
+[mavheader_qgc42.sh 실행](./mavheader_qgc42.sh)
 
 ## MAVLink ##
 
