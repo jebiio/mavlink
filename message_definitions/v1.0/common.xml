@@ -7080,6 +7080,7 @@
       <description>KRISO control command</description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
       <field type="uint32_t" name="op_mode">operation mode</field>
+      <field type="uint32_t" name="mission_mode">operation mode</field>
       <field type="uint32_t" name="ca_mode" units="rpm">collision avoidance mode</field>
       <field type="uint32_t" name="ca_method" units="rpm">collision avoidance method</field>
     </message>
@@ -7088,6 +7089,59 @@
       <description>KRISO control command</description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
       <field type="uint8_t" name="emergency_mode">emergency command</field>
+    </message>
+
+    <message id="9105" name="KRISO_WT_COMMAND">
+      <description>KRISO WT command</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="double[100]" name="lat">lat array 100 sizes</field>
+      <field type="double[100]" name="lon">lon array 100 sizes</field>
+      <field type="float[100]" name="spd_cmd">speed command </field>
+      <field type="float[100]" name="acceptance_radius"> acceptance radius</field>
+      <field type="float" name="nav_surge_pgain">surge p gain</field>
+      <field type="float" name="nav_surge_dgain">surge d gain</field>
+      <field type="float" name="nav_yaw_pgain">yaw p gain</field>
+      <field type="float" name="nav_yaw_dgain">yaw d gain</field>
+    </message>
+
+    <message id="9106" name="KRISO_CK_COMMAND">
+      <description>KRISO CK command</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="float" name="spd_cmd">speed command</field>
+      <field type="float" name="hdg_cmd">HDG command</field>
+      <field type="float" name="nav_surge_pgain">surge p gain</field>
+      <field type="float" name="nav_surge_dgain">surge d gain</field>
+      <field type="float" name="nav_yaw_pgain">yaw p gain</field>
+      <field type="float" name="nav_yaw_dgain">yaw d gain</field>
+    </message>
+
+
+    <message id="9107" name="KRISO_DP_COMMAND">
+      <description>KRISO DP command</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="double" name="target_wp_lat">target lat</field>
+      <field type="double" name="target_wp_lon">target lon</field>
+      <field type="float" name="targetposition_yaw">target position yaw</field>
+      <field type="float" name="dp_surge_pgain">surge P for dp</field>
+      <field type="float" name="dp_surge_dgain">surge D for dp</field>
+      <field type="float" name="dp_sway_pgain">Sway P for dp</field>
+      <field type="float" name="dp_sway_dgain">Sway D for dp</field>
+      <field type="float" name="dp_yaw_pgain">yaw pgain for dp</field>
+      <field type="float" name="dp_yaw_dgain">yaw dgain for dp</field>
+    </message>
+
+    <message id="9108" name="KRISO_CA_COMMAND">
+      <description>KRISO CA command</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
+      <field type="float" name="ca_alert_range">Voltage of the battery supplying the winch. NaN if unknown</field>
+      <field type="float" name="ca_avoid_range">Voltage of the battery supplying the winch. NaN if unknown</field>
+      <field type="float" name="ca_param1">parameter1 reserved for future using</field>
+      <field type="float" name="ca_param2">parameter2 reserved for future using</field>
+      <field type="float" name="ca_param3">parameter3 reserved for future using</field>
+      <field type="float" name="ca_param4">parameter4 reserved for future using</field>
+      <field type="float" name="ca_param5">parameter5 reserved for future using</field>
+      <field type="float" name="ca_param6">parameter6 reserved for future using</field>
+      <field type="float" name="ca_param7">parameter7 reserved for future using</field>
     </message>
 
     <message id="12900" name="OPEN_DRONE_ID_BASIC_ID">
