@@ -7087,18 +7087,18 @@
       <field type="uint8_t" name="emergency_mode">emergency command</field>
     </message>
 
-    <!-- <message id="9105" name="KRISO_WT_COMMAND">
+    <message id="9105" name="KRISO_WT_COMMAND">
       <description>KRISO WT command</description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
-      <field type="double[100]" name="lat">lat array 100 sizes</field>
-      <field type="double[100]" name="lon">lon array 100 sizes</field>
-      <field type="float[100]" name="spd_cmd">speed command </field>
-      <field type="float[100]" name="acceptance_radius"> acceptance radius</field>
+      <field type="double[10]" name="lat">lat array 100 sizes</field>
+      <field type="double[10]" name="lon">lon array 100 sizes</field>
+      <field type="float[10]" name="spd_cmd">speed command </field>
+      <field type="float[10]" name="acceptance_radius"> acceptance radius</field>
       <field type="float" name="nav_surge_pgain">surge p gain</field>
       <field type="float" name="nav_surge_dgain">surge d gain</field>
       <field type="float" name="nav_yaw_pgain">yaw p gain</field>
       <field type="float" name="nav_yaw_dgain">yaw d gain</field>
-    </message> -->
+    </message>
 
     <message id="9106" name="KRISO_CK_COMMAND">
       <description>KRISO CK command</description>
