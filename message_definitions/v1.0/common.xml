@@ -7379,10 +7379,10 @@
 
     <message id="9105" name="KRISO_WT_COMMAND">
       <description>KRISO WT command</description>
-      <field type="double" name="lat">lat array 5 sizes</field>
-      <field type="double" name="lon">lon array 5 sizes</field>
-      <field type="float" name="spd_cmd">speed command </field>
-      <field type="float" name="acceptance_radius"> acceptance radius</field>
+      <field type="double[5]" name="lat">lat array 5 sizes</field>
+      <field type="double[5]" name="lon">lon array 5 sizes</field>
+      <field type="float[5]" name="spd_cmd">speed command </field>
+      <field type="float[5]" name="acceptance_radius"> acceptance radius</field>
       <field type="float" name="nav_surge_pgain">surge p gain</field>
       <field type="float" name="nav_surge_dgain">surge d gain</field>
       <field type="float" name="nav_yaw_pgain">yaw p gain</field>
