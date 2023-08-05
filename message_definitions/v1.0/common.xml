@@ -7135,7 +7135,80 @@
       <field type="float" name="ca_param6">parameter6 reserved for future using</field>
       <field type="float" name="ca_param7">parameter7 reserved for future using</field>
     </message>
-    
+
+    <message id="9109" name="KRISO_WT_TO_VCC">
+      <description>KRISO WT_TO_VCC </description>
+      <field type="float" name="psi_d">psi</field>
+      <field type="float" name="spd_d">spd</field>
+      <field type="double" name="wp_lat_d">waypoint lat</field>
+      <field type="double" name="wp_lon_d">waypoint lon</field>
+      <field type="uint32_t" name="track_path_idx">track path index</field>
+    </message>
+
+    <message id="9110" name="KRISO_CA_TO_VCC">
+      <description>KRISO CA_TO_VCC </description>
+      <field type="uint32_t" name="ca_mode">mode</field>
+      <field type="uint32_t" name="ca_method">method</field>
+      <field type="uint32_t" name="ca_status">status</field>
+      <field type="float[5]" name="ca_risk_arr">risk arr</field>
+      <field type="float" name="reactive_spd_d">reactive speed</field>
+      <field type="float" name="reactive_psi_d">reactive psi</field>
+      <field type="double[5]" name="lat">lat array 5 sizes</field>
+      <field type="double[5]" name="lon">lon array 5 sizes</field>
+      <field type="float[5]" name="spd_cmd">speed command </field>
+      <field type="float[5]" name="acceptance_radius"> acceptance radius</field>
+    </message>
+
+    <message id="9111" name="KRISO_CK_TO_VCC">
+      <description>KRISO CK_TO_VCC from Controller</description>
+      <field type="float" name="psi_d">psi</field>
+      <field type="float" name="spd_d">speed</field>
+    </message>
+
+    <message id="9112" name="KRISO_CONTROL_COMMAND_TO_VCC">
+      <description>KRISO CONTROL_COMMAND_TO_VCC from Controller</description>
+      <field type="float" name="t1_rpm">t1 rpm</field>
+      <field type="float" name="t2_rpm">t2 rpm</field>
+      <field type="float" name="t3_rpm">t3 rpm</field>
+      <field type="float" name="t3_angle">t3 angle</field>
+      <field type="float" name="t4_rpm">t4 rpm</field>
+      <field type="float" name="t4_angle">t4 angle</field>
+      <field type="uint32_t" name="oper_mode">operation mode</field>
+      <field type="uint32_t" name="mission_mode">mission mode</field>
+    </message>
+
+    <message id="9113" name="KRISO_DP_TO_VCC">
+      <description>KRISO DP_TO_VCC from Controller</description>
+      <field type="double" name="surge_error">surge error</field>
+      <field type="double" name="sway_error">sway error</field>
+      <field type="double" name="yaw_error">yaw error</field>
+      <field type="uint32_t" name="dp_start_stop">dp start or stop</field>
+    </message>
+
+    <message id="9114" name="KRISO_AIS_STATUS">
+      <description>KRISO MIDDLEWARE_AIS from middleware</description>
+      <field type="uint32_t" name="msg_type">message type</field>
+      <field type="uint32_t" name="repeat">repeat</field>
+      <field type="uint32_t" name="mmsi">MMSI Maritime Mobile Service Identity</field>
+      <field type="uint32_t" name="reserved_1">reserved field 1</field>
+      <field type="float" name="speed">knots speed</field>
+      <field type="uint8_t" name="accuracy">position infomation accuracy</field>
+      <field type="double" name="lon">lon</field>
+      <field type="double" name="lat">lat</field>
+      <field type="float" name="course">COG</field>
+      <field type="uint32_t" name="heading">heading</field>
+      <field type="uint32_t" name="second">second</field>
+      <field type="uint32_t" name="reserved_2">reserved field 2</field>
+      <field type="uint8_t" name="cs">cs</field>
+      <field type="uint8_t" name="display">AIS display status</field>
+      <field type="uint8_t" name="dsc">Digital Selective Calling status</field>
+      <field type="uint8_t" name="band">frequency band</field>
+      <field type="uint8_t" name="msg22"></field>
+      <field type="uint8_t" name="assigned">channel assigned</field>
+      <field type="uint8_t" name="raim">Receiver Autonomous Integrity Monitoring status</field>
+      <field type="uint32_t" name="radio">mobile phone</field>
+    </message>
+        
     <message id="12900" name="OPEN_DRONE_ID_BASIC_ID">
       <wip/>
       <!-- This message is work-in-progress and it can therefore change, and should NOT be used in stable production environments -->
