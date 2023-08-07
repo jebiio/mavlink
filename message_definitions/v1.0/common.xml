@@ -7208,7 +7208,12 @@
       <field type="uint8_t" name="raim">Receiver Autonomous Integrity Monitoring status</field>
       <field type="uint32_t" name="radio">mobile phone</field>
     </message>
-        
+
+    <message id="9115" name="KRISO_ROS_LOG_STATUS">
+      <description>VCC ROS Logging Status</description>
+      <field type="uint8_t" name="logging_status">logging status</field>
+    </message>
+
     <message id="12900" name="OPEN_DRONE_ID_BASIC_ID">
       <wip/>
       <!-- This message is work-in-progress and it can therefore change, and should NOT be used in stable production environments -->
