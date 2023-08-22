@@ -69,6 +69,7 @@
       <field type="float" name="nav_surge_dgain">surge d gain</field>
       <field type="float" name="nav_yaw_pgain">yaw p gain</field>
       <field type="float" name="nav_yaw_dgain">yaw d gain</field>
+      <field type="uint8_t" name="count">waypoint count</field>
     </message>
 
     <message id="9106" name="KRISO_CK_COMMAND">
