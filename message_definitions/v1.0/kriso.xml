@@ -197,5 +197,51 @@
       <field type="float" name="t4_rpm">t4 rpm</field>
       <field type="float" name="t4_angle">t4 angle</field>      
     </message>
+
+ <message id="9117" name="KRISO_PLC_TO_VCC">
+      <description>PLC To VCC</description>
+      <field type="int16_t" name="mr_mtr_sta">mr mtr sta</field>
+      <field type="int16_t" name="mr_flt_msg_err1">mr flt msg error1</field>
+      <field type="int16_t" name="mr_flt_msg_err2">mr flt msg error2</field>
+      <field type="int16_t" name="mr_flt_msg_warn1">mr flt msg warn1</field>
+      <field type="int16_t" name="mr_flt_msg_warn2">mr flt msg warn2</field>
+      <field type="int16_t" name="mr_mtr_curr_real">mr curr real</field>
+      <field type="int16_t" name="mr_temp">mr temp</field>
+      <field type="int16_t" name="mr_mtr_rpm_real">mr mtr rpm real</field>
+      <field type="int16_t" name="mr_mtr_rot_real">mr mtr rot real</field>
+
+      <field type="int16_t" name="ml_mtr_sta">ml mtr sta</field>
+      <field type="int16_t" name="ml_flt_msg_err1">ml flt msg error1</field>
+      <field type="int16_t" name="ml_flt_msg_err2">ml flt msg error2</field>
+      <field type="int16_t" name="ml_flt_msg_warn1">ml flt msg warn1</field>
+      <field type="int16_t" name="ml_flt_msg_warn2">ml flt msg warn2</field>
+      <field type="int16_t" name="ml_mtr_curr_real">curr real</field>
+      <field type="int16_t" name="ml_temp">ml temp</field>
+      <field type="int16_t" name="ml_mtr_rpm_real">ml rpm real</field>
+      <field type="int16_t" name="ml_mtr_rot_real">ml rot real</field>
+
+      <field type="int16_t" name="br_mtr_sta">br mtr sta</field>
+      <field type="int16_t" name="br_flt_msg">br flt msg</field>
+      <field type="int16_t" name="br_mtr_curr_real">br curr real</field>
+      <field type="int16_t" name="br_temp">br temp</field>
+      <field type="int16_t" name="br_mtr_rpm">br mtr rpm</field>
+      <field type="int16_t" name="br_mtr_rot_sta">br mtr rot sta</field>
+
+      <field type="int16_t" name="bl_mtr_sta">bl mtr sta</field>
+      <field type="int16_t" name="bl_flt_msg">bl flt msg</field>
+      <field type="int16_t" name="bl_mtr_curr_real">bl mtr curr real</field>
+      <field type="int16_t" name="bl_temp">bl temp</field>
+      <field type="int16_t" name="bl_mtr_rpm">bl mtr rpm</field>
+      <field type="int16_t" name="bl_mtr_rot_sta">bl mtr rot sta</field>
+
+      <field type="int16_t" name="sr_str_rpm">sr str rpm</field>
+      <field type="int16_t" name="sr_str_ang">sr str ang</field>
+      <field type="int16_t" name="sl_str_rpm">sl str rpm</field>
+      <field type="int16_t" name="sl_str_ang">sl str ang</field>
+      <field type="int16_t" name="batt400vdc">battery 400v</field>
+      <field type="int16_t" name="batt24vdc_1">battery 24v dc1</field>
+      <field type="int16_t" name="batt24vdc_2">battery 24v dc2</field>
+    </message>
+
   </messages>
 </mavlink>
